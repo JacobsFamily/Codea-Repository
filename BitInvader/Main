@@ -51,9 +51,9 @@ function draw()
         touch = touchingAtPos()
         if touch then
             if touch.x < (hero.position.x - 10) then
-                hero.position.x = hero.position.x - 3
+                hero.position.x = hero.position.x - 10
             elseif touch.x > (hero.position.x + 10) then
-                hero.position.x = hero.position.x + 3
+                hero.position.x = hero.position.x + 10
             end
         end
 

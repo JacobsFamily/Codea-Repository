@@ -1,3 +1,4 @@
+
 -- This class draws the lines streaming past in the background
 -- of the game. We spawn and delete them in the self.lines table
 
