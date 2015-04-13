@@ -1,0 +1,41 @@
+Explosion = class()
+
+function Explosion:init(pos)
+    self.position = pos
+    self.opacity = 255
+    self.time = 0
+    self.lines = {}
+
+    sound("explode",967)
+
+    for i = 1,10 do
+        dir = vec2(0,1)
+        dir = dir:rotate( math.rad(math.random(360)) )
+        table.insert( self.lines, dir*math.random(2,7) )
+    end
+end
+
+function Explosion:isDone()
+    return self.opacity <= 0
+end
+
+function Explosion:draw()
+    self.time = self.time + 0.5
+    
+    pushStyle()
+
+    lineCapMode(ROUND)
+    strokeWidth(20)
+    smooth()
+    stroke(255,255,255,math.max(self.opacity,0))
+
+    p = self.position
+    for i,v in ipairs(self.lines) do
+        vt = p + v * self.time
+        line(p.x, p.y, vt.x, vt.y)
+    end
+
+    self.opacity = 255 * (1 - (self.time/30));
+
+    popStyle()
+end

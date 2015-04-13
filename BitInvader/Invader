@@ -1,0 +1,63 @@
+Invader = class()
+
+function Invader:init()
+    self.position = vec2(0,0)
+    self.bullets = {}
+    self.frame = 0
+end
+
+function Invader:spawnBullet()
+    sound("shoot",18)
+    table.insert( self.bullets, vec2( self.position.x, self.position.y + 30 ) )
+end
+
+function Invader:drawBullets()
+    -- Spawn bullets
+    if self.frame%30 == 0 then
+        self:spawnBullet()
+    end
+
+    -- Move, draw, cull bullets
+    for i,v in ipairs(self.bullets) do
+        v.y = v.y + 3
+
+        ellipse(v.x, v.y, 10, 10)
+
+        if v.y > (HEIGHT + 10) then
+            table.remove(self.bullets,i)
+        end
+    end
+end
+
+function Invader:draw()
+    self.frame = (self.frame + 1)%128
+
+    pushMatrix()
+    pushStyle()
+    
+    -- Set up basic graphical style
+    lineCapMode(ROUND)
+    strokeWidth(8)
+    stroke(255, 255, 255, 255)
+    smooth()
+    noFill()
+
+    -- Transform to pos
+    translate(self.position.x, self.position.y)
+
+    -- Draw our triangle invader
+    -- 60 pixels high, 40 pixels wide
+    line( 0, 30, 20, -30 )
+    line( 0, 30,-20, -30 )
+    line( -20, -30, 20, -30 )
+
+    popMatrix()
+
+    self:drawBullets()
+
+    popStyle()
+end
+
+function Invader:touched(touch)
+    -- Codea currently does not automatically call this method
+end
