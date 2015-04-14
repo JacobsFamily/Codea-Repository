@@ -52,10 +52,6 @@ function StreamingLines:updateAndCull()
         end
     end
 
-    -- print("Removing ", #toCull)
-    --for i = #toCull,1,-1 do
-    --    table.remove( self.lines, i )
-    --end
 end
 
 function StreamingLines:update()
