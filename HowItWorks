@@ -5,7 +5,7 @@ languages.
 commentary, etc will occur in either  of the ForkHub or GitHub apps on Android, or the ioctocat app on IOS. 
 * Process:
   * Use ipad or mobile phone to monitor changes to the JacobsFamily repository
-  * Fork the repository to create a copy of the repository on a branch
+  * Fork and/or branch the repository to create a copy of the repository on a branch
   * The branch should have the issue number in its name
   * Switch the repository from master to the newly created branch name.
   * If there is an issue assigned to you, do the following:
