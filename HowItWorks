@@ -8,7 +8,7 @@ commentary, etc will occur in either  of the ForkHub or GitHub apps on Android, 
   * Fork the repository to create a copy of the repository on a branch
   * The branch should have the issue number in its name
   * Switch the repository from master to the newly created branch name.
-  * If there is an issue assigned to you, do the following:
+  * If there is an issue assigned to you, you can do the following:
     * Read the issue thoroughly, including any hints contained there
     * Clone (manually with copy and paste) the codea code over to the ipad
     * Make the change to 1 or more files in Codea and test thoroughly
