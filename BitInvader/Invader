@@ -35,21 +35,6 @@ function Invader:draw()
     pushMatrix()
     pushStyle()
     
-    -- Set up basic graphical style
-    --lineCapMode(ROUND)
-    --strokeWidth(8)
-    --stroke(255, 255, 255, 255)
-    --smooth()
-   -- noFill()
-
-    -- Transform to pos
-    --translate(self.position.x, self.position.y)
-
-    -- Draw our triangle invader
-    -- 60 pixels high, 40 pixels wide
-    --line( 0, 30, 20, -30 )
-    --line( 0, 30,-20, -30 )
-    --line( -20, -30, 20, -30 )
     sprite("Space Art:Red Ship", self.position.x, self.position.y, 80)
 
     popMatrix()

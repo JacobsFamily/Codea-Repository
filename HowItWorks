@@ -1,0 +1,23 @@
+* Mission Statement:  To make coding as social and as fun as possible, while learning about modern tools and programming 
+languages.   
+* Language: We will use the programming language Codea, built on Lua, to learn basic coding skills while making games for IPad.
+* CM: We will use github to manage CM.  The plan is to perform traditional clone/edit/commit on a desktop or laptop PC.  Reviews,
+commentary, etc will occur in either  of the ForkHub or GitHub apps on Android, or the ioctocat app on IOS. 
+* Process:
+  * Use ipad or mobile phone to monitor changes to the JacobsFamily repository
+  * Fork the repository to create a copy of the repository on a branch
+  * The branch should have the issue number in its name
+  * Switch the repository from master to the newly created branch name.
+  * If there is an issue assigned to you, you can do the following:
+    * Read the issue thoroughly, including any hints contained there
+    * Clone (manually with copy and paste) the codea code over to the ipad
+    * Make the change to 1 or more files in Codea and test thoroughly
+    * Once satified with the test, you can switch to firefox (because file editing is still not a feature in the app), 
+    edit the file and copy and paste the code from codea into the file.
+    * Once done, commit the file to the branch
+    * Repeat for any other files that require changes
+    * Once all of your changes are committed to the branch in github, start a pull request.
+    * JacobsFamily members will review and/or approve the request.  Hit the merge button once the members are happy
+    with the review.
+  * Once the code is back in master, you may delete the branch.
+
