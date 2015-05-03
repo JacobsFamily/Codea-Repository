@@ -1,0 +1,39 @@
+function setup()
+    print("this is the world of malik run!")
+end
+
+
+-- This function gets called once every frame
+function draw()
+    -- This sets a light
+-- background color
+    background(4, 252, 219, 255)
+    background(107, 253, 5, 255)
+ 
+    -- This sets the line thickness
+    strokeWidth(5)
+       -- Do your drawing here.                                                                                        
+    text("this is the world of malik run or the game of your life",WIDTH*0.5,HEIGHT*0.95)
+    text("get ready for the epic run",WIDTH*0.5,HEIGHT*0.93)
+    text("are you ready",WIDTH*0.5,HEIGHT*0.91)
+ 
+    line(WIDTH*0.1, HEIGHT*0.8, WIDTH*0.9, HEIGHT*0.8) -- horizontal line
+    
+    line(WIDTH*0.1, HEIGHT*0.8, WIDTH*0.1, HEIGHT*0.1) -- vertical line
+    
+    line(WIDTH*0.5, HEIGHT*0.8, WIDTH*0.5, HEIGHT*0.1) -- vertical line
+    
+    line(WIDTH*0.9, HEIGHT*0.8, WIDTH*0.9, HEIGHT*0.1) -- vertical line
+    
+    line(WIDTH*0.1, HEIGHT*0.1, WIDTH*0.9, HEIGHT*0.1) -- horizontal
+    sound(DATA, "ZgBAJgBNTkBATlJACNZRPpqZmT7NzMw+QABAf0BVUUBAQF9h")
+     strokeWidth(50)
+     ellipse(WIDTH/2, HEIGHT/2,200)
+-- local RIGHT= make objects(WIDTH -WIDTH/4,HEIGHT/2,WIDTH/3, 15)
+--    RIGHT.tipe=STATIC
+--FULLSCREEN=neon
+text("score 0 high score",WIDTH*0.15,HEIGHT*0.97)
+
+text ("avoid the enemys",WIDTH*0.5,HEIGHT*0.85)
+    
+end
