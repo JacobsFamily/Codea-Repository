@@ -1,0 +1,15 @@
+LotteryMachine = class()
+
+function Draw(quad)
+   for i = 1, 4 do
+     quad.num[i] = math.random() %14;
+     while quad.num[i] == 0
+        quad.num[i] = math.random() %14;
+     end
+   end   
+end
+
+function drawSort(quad)
+  -- pattern after NBALottery::Machine::drawSort
+end
+   
