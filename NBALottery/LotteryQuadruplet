@@ -1,0 +1,5 @@
+Quadruplet = class()
+
+function Quadruplet:init(a,b,c,d)
+  self.num = {a,b,c,d}
+end
